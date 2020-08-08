@@ -1,0 +1,63 @@
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+body {
+  background-color: #ebebeb;
+  font-family: 'Source Code Pro', monospace;
+
+  transition: 1s;
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  margin: 2em auto;
+  text-align: center;
+}
+
+#clock {
+  margin: 25px 0;
+}
+
+#seconds, #minutes {
+  display: inline;
+}
+
+#counter {
+  margin-bottom: 25px;
+}
+
+
+img {
+  width: 200px;
+}
+
+img:hover {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  30% { transform: rotate(10deg); }
+  /* 50% { transform: rotate(0deg); } */
+  60% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+button {
+  background-color: grey;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 3px;
+  color: white;
+  width: 95%;
+  height: 60px;
+  margin: 5px auto;
+
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
